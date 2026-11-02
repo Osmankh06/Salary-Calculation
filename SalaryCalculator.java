@@ -13,7 +13,22 @@ public class SalaryCalculator {
         double initialGrossSalary = basicSalary + allowance;
 
         System.out.printf("Initial gross salary = %.2f%n", initialGrossSalary);
+        
+        double loanDeduction = 0;
+
+        if (hasLoan.equalsIgnoreCase("yes")) {
+            System.out.print("Enter monthly loan deduction: ");
+            loanDeduction = input.nextDouble();
+        }
+
+        double netSalary = grossSalary - loanDeduction;
+
+        System.out.printf("Gross salary: %.2f%n", grossSalary);
+        System.out.printf("Loan deduction: %.2f%n", loanDeduction);
+        System.out.printf("Net salary after deduction: %.2f%n", netSalary);
 
         input.close();
+    }
+}
     }
 }
