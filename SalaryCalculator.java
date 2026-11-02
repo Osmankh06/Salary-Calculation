@@ -30,5 +30,4 @@ public class SalaryCalculator {
         input.close();
     }
 }
-    }
-}
+
