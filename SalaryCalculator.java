@@ -10,15 +10,9 @@ public class SalaryCalculator {
         System.out.print("Enter allowance: ");
         double allowance = input.nextDouble();
 
-        System.out.print("Enter bonus amount: ");
-        double bonus = input.nextDouble();
-
         double initialGrossSalary = basicSalary + allowance;
-        double totalSalary = initialGrossSalary + bonus;
 
-        System.out.printf("Initial gross salary: %.2f%n", initialGrossSalary);
-        System.out.printf("Bonus: %.2f%n", bonus);
-        System.out.printf("Total salary including bonus: %.2f%n", totalSalary);
+        System.out.printf("Initial gross salary = %.2f%n", initialGrossSalary);
 
         input.close();
     }
